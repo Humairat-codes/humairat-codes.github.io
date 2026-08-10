@@ -26,6 +26,12 @@ If the probability of an event is **equally likely** for all outcomes in the sam
 
 ---
 
+#### DEMORGAN's LAW STATES
+1. P(A U B)' = P(A' n B')
+2. P(A n B)' = P(A' U B')
+
+---
+
 ## Inclusion-Exclusion Principle
 
 The **Inclusion-Exclusion Principle** is a method used to avoid double-counting when events or sets overlap.
@@ -66,3 +72,11 @@ given, P(O) = 0.5, P(W)= 0.6, P(O U W) = 0.7
 #### we know that P(A U B) = P(A) + P(B) - P(A n B)
 so, P(O n W) = P(O) + P(W) - P(O U W) = 0.5 + 0.6 - 0.7 = 0.4
 ### ans = 0.4
+
+---
+
+### Worked Example(2008 PYQ)
+**P(A n B) = 1/2, P(A') = 1/3, P(B') = 1/3. P(A U B) = ?**
+Thus, P(A) = 1 - P(A') = 1 - 1/3 = 2/3
+P(B) = 1 - P(B') = 1 - 1/3 = 2/3
+P(A U B) = P(A) + P(B) - P(A n B) = 2/3 + 2/3 - 1/2 = 5/6 
