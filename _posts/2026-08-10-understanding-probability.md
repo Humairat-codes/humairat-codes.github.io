@@ -53,3 +53,16 @@ P(A ∪ B) = 3/6 + 4/6 - 2/6 = (3 + 4 - 2) / 6 = **5/6**
 
 **Verification:**  
 A ∪ B = {1, 3, 4, 5, 6}, which contains 5 out of 6 outcomes → **5/6**. The formula works!
+
+---
+
+### Worked Examples(1997 PYQ)
+
+**The probability that it will rain today is 0.5. The probability that it will rain tomorrow is 0.6. The probability that it will rain today or tomorrow is 0.7. What is the probability that it will rain today and tomorrow?**
+
+Let O = it will rain today
+Let W = it will rain tomorrow 
+given, P(O) = 0.5, P(W)= 0.6, P(O U W) = 0.7 
+#### we know that P(A U B) = P(A) + P(B) - P(A n B)
+so, P(O n W) = P(O) + P(W) - P(O U W) = 0.5 + 0.6 - 0.7 = 0.4
+### ans = 0.4
