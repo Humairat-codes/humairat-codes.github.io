@@ -2,6 +2,7 @@
 layout: post
 title: "Process States in OS"
 date: 2026-09-01
+categories: [Operating Systems]
 ---
 
 **Process** — It is a program under execution.
