@@ -10,7 +10,8 @@ Here are my latest posts organized by subject:
 {% for category in site.categories %}
 ### 📁 {{ category[0] }}
 
-{% for post in category[1] %}
+{% assign sorted_posts = category[1] | reverse %}
+{% for post in sorted_posts %}
 📄 [{{ post.title }}]({{ post.relative_url }}) — *{{ post.date | date: "%B %d, %Y" }}*
 {% endfor %}
 
