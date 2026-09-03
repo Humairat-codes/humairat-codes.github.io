@@ -2,7 +2,7 @@
 layout: post
 title: "Probability Basics & The Inclusion-Exclusion Principle"
 date: 2026-08-10
-categories: [Mathematics, Computer-Science]
+categories: [Engineering Mathematics]
 ---
 
 # What is Probability?
