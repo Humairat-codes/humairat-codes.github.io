@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Intro To Theory Of Computation"
+date: 2026-09-03
 categories: [Theory of Computation]
 ---
 ### Important Theory of Computation Terms
