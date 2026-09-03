@@ -1,7 +1,9 @@
-# Humairat-codes.github.io
-<div align="center">
 
-# 🌸 ✨ Humaira's CSE Corner ✨ 🌸
+<div align="center">
+# Humairat-codes.github.io
+# 🌸 ✨ [Humaira's CSE Corner](https://humairat-codes.github.io) ✨ 🌸
+
+> 🚀 **[Click here to visit my live blog!](https://humairat-codes.github.io)**
 
 *Documenting my journey through Computer Science, one concept at a time!* 💻✨
 
