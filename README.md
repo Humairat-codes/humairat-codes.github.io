@@ -1,55 +1,60 @@
 <div align="center">
+██╗  ██╗██╗   ██╗███╗   ███╗█████╗ ██╗██████╗  █████╗
+██║  ██║██║   ██║████╗ ████║██╔══██╗██║██╔══██╗██╔══██╗
+███████║██║   ██║██╔████╔██║███████║██║██████╔╝███████║
+██╔══██║██║   ██║██║╚██╔╝██║██╔══██║██║██╔══██╗██╔══██║
+██║  ██║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║██║  ██║██║  ██║
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+[ C S E  .  N O D E  .  V 2 . 0 ]
+### ⚡ `HUMAIRA // CSE CORE KNOWLEDGE BASE` ⚡
 
-# 🌸 ✨ [Humaira's CSE Corner](https://humairat-codes.github.io) ✨ 🌸
-
-> 🚀 **[Click here to visit my live blog!](https://humairat-codes.github.io)**
-
-*Documenting my journey through Computer Science, one concept at a time!* 💻✨
-
-[![Blog Site](https://img.shields.io/badge/Live_Blog-Visit_Here-ffb6c1?style=for-the-badge&logo=github&logoColor=white)](https://humairat-codes.github.io)
-[![Built with Jekyll](https://img.shields.io/badge/Built_With-Jekyll-ff69b4?style=for-the-badge&logo=jekyll&logoColor=white)](https://jekyllrb.com/)
+[![SYSTEM LIVE](https://img.shields.io/badge/SYSTEM-ONLINE-00FF66?style=for-the-badge&logo=github&logoColor=black)](https://humairat-codes.github.io)
+[![CORE ENGINE](https://img.shields.io/badge/CORE-JEKYLL_v4-00FFFF?style=for-the-badge&logo=jekyll&logoColor=black)](https://jekyllrb.com/)
+[![PROTOCOL](https://img.shields.io/badge/PROTOCOL-MARKDOWN_--_LaTeX-FF007F?style=for-the-badge&logo=markdown&logoColor=white)](https://humairat-codes.github.io)
 
 ---
 
-### 🌷 Welcome to My Learning Space! 🌷
-
-Hello, friend! 👋 Welcome to my personal computer science repository and blog space.  
-I share clear, broken-down notes on core computer science subjects to help myself and others learn faster.
+**`> INIT USER SESSION...`**  
+Welcome to the central repository for Computer Science & Engineering modules.  
+*Decoding algorithms, theoretical foundations, and systems architecture.*
 
 </div>
 
 ---
 
-### 📚 What You'll Find Here
+### 🌐 `SYSTEM DIRECTORIES`
 
-| Category | Topics Covered | Status |
+| Module | Core Subjects | Status |
 | :--- | :--- | :---: |
-| 🧮 **Engineering Math** | Probability, Logic, Set Theory, Combinatorics | 🟢 Active |
-| ⚙️ **Operating Systems** | Process States, CPU Scheduling, Memory Management | 🟢 Active |
-| 🔣 **Theory of Computation** | Automata, Regular Languages, Grammars | 🟢 Active |
-| 📝 **Learning Journal** | Milestones, study tips, and CS career notes | 🟢 Active |
+| `01_MATH` | **Engineering Mathematics** (Probability, Set Theory, Logic) | `[ACTIVE]` |
+| `02_SYS` | **Operating Systems** (Process States, Scheduling, Memory) | `[ACTIVE]` |
+| `03_TOC` | **Theory of Computation** (Automata, Languages, Grammars) | `[ACTIVE]` |
+| `04_LOG` | **Learning Journal** (Milestones & Engineering Notes) | `[ACTIVE]` |
 
 ---
 
-### 💖 Recent Notes & Articles
+### 🛰️ `LATEST TRANSMISSIONS`
 
-* 📄 **[Intro to Theory of Computation](https://humairat-codes.github.io)** — *Alphabet, Symbols, Strings, and Kleene Closures*
-* 📄 **[Process States in OS](https://humairat-codes.github.io)** — *Preemptive vs. Non-Preemptive scheduling*
-* 📄 **[Probability Basics](https://humairat-codes.github.io)** — *Axioms & The Inclusion-Exclusion Principle with PYQs*
+* 🔹 **[`TOC-01`] [Intro to Theory of Computation](https://humairat-codes.github.io)**  
+  *Alphabets $\Sigma$, Symbols, Strings, and Kleene Closure operations.*
+* 🔹 **[`OS-01`] [Process States in OS](https://humairat-codes.github.io)**  
+  *Preemptive vs. Non-Preemptive scheduling state transitions.*
+* 🔹 **[`MATH-01`] [Probability Basics](https://humairat-codes.github.io)**  
+  *Axioms, Inclusion-Exclusion Principle & PYQ breakdowns.*
 
 ---
 
 <div align="center">
 
-### 🎀 Tech Stack & Tools
+### 💻 `TECH STACK MATRIX`
 
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=github&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=LaTeX&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-000000?style=for-the-badge&logo=github&logoColor=00FF66)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=00FFFF)
+![LaTeX](https://img.shields.io/badge/LaTeX-000000?style=for-the-badge&logo=LaTeX&logoColor=FF007F)
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032)
 
 <br>
 
-*✨ Happy Coding & Learning! ✨*
+**`> END OF LINE // SYSTEM READY`**
 
 </div>
