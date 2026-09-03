@@ -8,7 +8,7 @@ title: Home
 {% assign categories = site.posts | map: 'categories' | flatten | uniq %}
 
 {% for category in categories %}
-  ## 📁 {{ category }}
+  <h3>📁 {{ category }}</h3>
   <ul>
     {% for post in site.posts %}
       {% if post.categories contains category %}
