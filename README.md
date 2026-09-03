@@ -1,5 +1,4 @@
 <div align="center">
-# Humairat-codes.github.io
 
 # 🌸 ✨ [Humaira's CSE Corner](https://humairat-codes.github.io) ✨ 🌸
 
