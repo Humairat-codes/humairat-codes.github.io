@@ -16,9 +16,15 @@ for reference - (Q,Σ,Q0,F,δ)
 
 ---
 
-### Example 2 - sets of strings of length 2
+### Example 2 - sets of strings of length 2 
 - Construct DFA that accepts set of all strings over {0,1} of length 2.
 - Σ = {0,1}
 - L = {00,01,10,11}
 
 ![DFA2](/assets/DFA2EG.png)
+
+---
+
+### Example 3 - construct a DFA over {a,b} that does not contain string aabb
+- Σ = {a,b}
+![DFA3](/assets/DFA3EG.png)
