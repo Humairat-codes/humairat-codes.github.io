@@ -27,4 +27,5 @@ for reference - (Q,Σ,Q0,F,δ)
 
 ### Example 3 - construct a DFA over {a,b} that does not contain string aabb
 - Σ = {a,b}
+---
 ![DFA3](/assets/DFA3EG.png)
