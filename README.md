@@ -1,11 +1,5 @@
 <div align="center">
-██╗  ██╗██╗   ██╗███╗   ███╗█████╗ ██╗██████╗  █████╗
-██║  ██║██║   ██║████╗ ████║██╔══██╗██║██╔══██╗██╔══██╗
-███████║██║   ██║██╔████╔██║███████║██║██████╔╝███████║
-██╔══██║██║   ██║██║╚██╔╝██║██╔══██║██║██╔══██╗██╔══██║
-██║  ██║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║██║  ██║██║  ██║
-╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
-[ C S E  .  N O D E  .  V 2 . 0 ]
+
 ### ⚡ `HUMAIRA // CSE CORE KNOWLEDGE BASE` ⚡
 
 [![SYSTEM LIVE](https://img.shields.io/badge/SYSTEM-ONLINE-00FF66?style=for-the-badge&logo=github&logoColor=black)](https://humairat-codes.github.io)
