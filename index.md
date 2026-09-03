@@ -1,19 +1,22 @@
 ---
-layout: home
-title: "Home"
+layout: default
+title: Home
 ---
 
-# 📚 My CSE Blog
+# ⚡ CSE CORE KNOWLEDGE BASE
 
-Here are my latest posts organized by subject:
+{% assign categories = site.posts | map: 'categories' | flatten | uniq %}
 
-{% for category in site.categories %}
-### 📁 {{ category[0] }}
-
-{% assign sorted_posts = category[1] | reverse %}
-{% for post in sorted_posts %}
-📄 [{{ post.title }}]({{ post.relative_url }}) — *{{ post.date | date: "%B %d, %Y" }}*
-{% endfor %}
-
----
+{% for category in categories %}
+  ## 📁 {{ category }}
+  <ul>
+    {% for post in site.posts %}
+      {% if post.categories contains category %}
+        <li>
+          <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a> 
+          <small>— {{ post.date | date: "%B %d, %Y" }}</small>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 {% endfor %}
