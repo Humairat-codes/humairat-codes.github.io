@@ -1,17 +1,41 @@
-Important TOC terms!
-1. Symbol - a single character. Eg - 0,1,a,b,c,d,etc
-2. Alphabet - a finite non-empty set of symbols. Eg, Σ = {0,1} , Σ = {a,b,c},etc
-3. String - sequence of symbols. Eg : if Σ={a,b} the string could be aa,ab,ba,bb,etc
-4. Language - set of strings over Σ. eg, if Σ={a,b} then L = {ɛ,a,b,ab,aa,bb,ba...}
+### Important Theory of Computation Terms
+
+1. **Symbol:** A single character or atom.  
+   *Examples:* `0`, `1`, `a`, `b`
+
+2. **Alphabet ($\Sigma$):** A finite, non-empty set of symbols.  
+   *Examples:* $\Sigma = \{0, 1\}$, $\Sigma = \{a, b, c\}$
+
+3. **String:** A finite sequence of symbols chosen from an alphabet.  
+   *Examples:* If $\Sigma = \{a, b\}$, valid strings include `a`, `ab`, `ba`, `aabb`.
+
+4. **Language ($L$):** Any set/subset of strings over a given alphabet $\Sigma$.  
+   *Examples:* If $\Sigma = \{a, b\}$, then $L_1 = \{a, ab, aab\}$ (finite) or $L_2 = \{\varepsilon, a, b, aa, bb, \dots\}$ (infinite).
+
 ---
 
-Powers of Σ : say,Σ={0,1}
-Σ^{0} = set of all strings of length 0 : Σ^{0} = {ɛ}
-Σ^{1} = set of all symbols of length 1 : Σ^{1} = {0,1}
-Σ^{2} = set of all symbols of length 2 : Σ^{2} = {00,01,10,11}
-NOTE :cardinality - number of elements in a set 
-|Σ| = k then,
-|Σ^{n}| = k^{n}
-then if Σ^{3} and Σ={a,b,c} then |Σ^{3}| = 3^{3} = 9
+### Powers of $\Sigma$
 
-Σ^{*} = set of all possible stings of all lengths over Σ = Σ^{0} U Σ^{1} U Σ^{2} ...
+Taking powers of an alphabet generates sets of strings of specific lengths.  
+For $\Sigma = \{0, 1\}$:
+
+* $\Sigma^0 = \{\varepsilon\}$ *(Set of all strings of length 0; $\varepsilon$ represents the empty string)*
+* $\Sigma^1 = \{0, 1\}$ *(Set of all strings of length 1)*
+* $\Sigma^2 = \{00, 01, 10, 11\}$ *(Set of all strings of length 2)*
+
+#### Cardinality Rule
+If $|\Sigma| = k$, then the number of strings of length $n$ is:
+$$|\Sigma^n| = k^n$$
+
+*Example:* If $\Sigma = \{a, b, c\}$, then $|\Sigma| = 3$.  
+The number of strings of length 3 is $|\Sigma^3| = 3^3 = 27$.
+
+---
+
+### Kleene Closures
+
+* **Kleene Star ($\Sigma^*$):** The set of all possible strings of all lengths over $\Sigma$, including the empty string $\varepsilon$. It is always an infinite set.
+  $$\Sigma^* = \Sigma^0 \cup \Sigma^1 \cup \Sigma^2 \cup \dots$$
+
+* **Positive Closure ($\Sigma^+$):** The set of all possible strings of length 1 or greater (excluding $\varepsilon$).
+  $$\Sigma^+ = \Sigma^1 \cup \Sigma^2 \cup \Sigma^3 \cup \dots = \Sigma^* \setminus \{\varepsilon\}$$
