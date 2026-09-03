@@ -3,14 +3,13 @@ layout: home
 title: "Home"
 ---
 
-# Welcome to My CSE Blog!
+# 📚 My CSE Blog
 
-Here are my latest posts organized by subject:
+{% for category in site.categories %}
+### 📁 {{ category[0] }}
 
-{% assign categories = site.categories %}
-{% for category in categories %}
-  ## {{ category[0] }}
-  {% for post in category[1] %}
-    * [{{ post.title }}]({{ post.url }}) - *{{ post.date | date: "%B %d, %Y" }}*
-  {% endfor %}
+{% for post in category[1] %}
+📄 [{{ post.title }}]({{ post.url }}) — *{{ post.date | date: "%B %d, %Y" }}*
+{% endfor %}
+
 {% endfor %}
