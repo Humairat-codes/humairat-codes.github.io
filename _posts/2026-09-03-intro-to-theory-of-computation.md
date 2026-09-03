@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Intro To Theory Of Computation"
+categories: [Theory of Computation]
+---
 ### Important Theory of Computation Terms
 
 1. **Symbol:** A single character or atom.  
