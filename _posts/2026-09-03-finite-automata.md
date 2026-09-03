@@ -5,9 +5,17 @@ date: 2026-09-03
 categories: [Theory of Computation]
 ---
 
-Finite state machines - 2 categories
-FA with output - Moore Machine, Mealy machine
-FA without output - DFA, NFA, ɛ-NFA
+# Finite state machines 
+## 2 categories of FSM
+1. FA with output
+- Moore Machine
+-  Mealy machine
+2. FA without output
+- FA
+- NFA
+- ɛ-NFA
+
+---
 
 ## DFA
 DFA 
