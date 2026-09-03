@@ -10,9 +10,11 @@ FA with output - Moore Machine, Mealy machine
 FA without output - DFA, NFA, ɛ-NFA
 
 ## DFA
-DFA - deterministic Finite Automata
+DFA 
+- deterministic Finite Automata
 - simplest model of computation
 - contains a very limited memory
+
 ---
 ![DFA](/assets/FA1.png)
 the figure looks weird but focus on concept :D
@@ -21,18 +23,20 @@ Here A is initial state/starting state. Look at the arrow
 D is Final state. Look at the double circles over it. 
 
 # Formal definition of DFA is (Q,Σ,Q0,F,δ)
-Q = set of all states
-Σ = set of symbols or the Alphabet
-Q0 = Initial state
-F = set of final states
-δ = transition function that maps from Q X Σ -> Q
+1. Q = set of all states
+2. Σ = set of symbols or the Alphabet
+3. Q0 = Initial state
+4. F = set of final states
+5. δ = transition function that maps from Q X Σ -> Q
 
-From above figure, 
-Q = {A,B,C,D}
-Σ = {0,1}
-Q0 = A
-F = {D}
-δ is transition function  
+---
+
+## From above figure, 
+- Q = {A,B,C,D}
+- Σ = {0,1}
+- Q0 = A
+- F = {D}
+- δ is transition function  
 
 | **Current State** | **Input `0`** | **Input `1`** |
 | ----------------- | ------------- | ------------- |
