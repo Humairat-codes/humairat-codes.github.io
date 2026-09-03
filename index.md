@@ -5,8 +5,12 @@ title: "Home"
 
 # Welcome to My CSE Blog!
 
-Here are my latest posts on core Computer Science topics:
+Here are my latest posts organized by subject:
 
-{% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }}) - *{{ post.date | date: "%B %d, %Y" }}*
+{% assign categories = site.categories %}
+{% for category in categories %}
+  ## {{ category[0] }}
+  {% for post in category[1] %}
+    * [{{ post.title }}]({{ post.url }}) - *{{ post.date | date: "%B %d, %Y" }}*
+  {% endfor %}
 {% endfor %}
