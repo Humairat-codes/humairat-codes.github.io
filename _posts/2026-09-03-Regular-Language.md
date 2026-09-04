@@ -5,28 +5,153 @@ date: 2026-09-03
 categories: [Theory of Computation]
 ---
 
+---
+
+layout: post
+title: "Regular Languages Introduction"
+date: 2026-09-03
+categories: [Theory of Computation]
+-----------------------------------
+
 # REGULAR LANGUAGES
-## A language is Regular iff it is recognized by a finite state machine(FSM)
+
+## A language is **regular if and only if** it is recognized by a Finite State Machine (FSM).
 
 ---
 
-### - Then what languages are not Regular? Those that are not recognized by FSM, and Require MEMORY(Remember : DFA or FSM have very limited memory. It can not store or count strings)
-Eg1 - ababbbababb (look ate the patter: ababb is repeated!) - Can not be designed using FSM so it is not a regular language
-Eg2 - a^{n} b^{n} - aaaabbbb but it can not be designed by FSM because an FSM can not keep track of the count of a's and b's.
+## What languages are not regular?
+
+Languages that **cannot be recognized by a Finite State Machine** are called **non-regular languages**.
+
+An FSM has **finite memory**. It cannot remember an **unbounded amount of information**, such as:
+
+* An arbitrarily large count
+* An arbitrarily long string
+* Information that needs to be compared later without a fixed limit
+
+### Example 1
+
+Consider:
+
+$$
+L = \{ww \mid w \in \{a,b\}^*\}
+$$
+
+For example, if $w = ab$, then:
+
+$$
+ww = abab
+$$
+
+This language is **not regular** because an FSM would need to remember an arbitrarily long string $w$ and compare it with the following string.
+
+### Example 2
+
+Consider:
+
+$$
+L = \{a^n b^n \mid n \geq 0\}
+$$
+
+Examples:
+
+```text
+ab
+aabb
+aaabbb
+aaaabbbb
+```
+
+This language is **not regular** because an FSM cannot keep track of an arbitrarily large number of $a$'s and ensure that exactly the same number of $b$'s follows.
 
 ---
 
-## OPERATIONS on REGULAR LANGUAGE
-### 1.UNION - A U B = {x | x ∈ OR x ∈ B}
-### 2. CONCATENATION - A . B = {xy | x ∈ A AND y ∈ B}
-### 3. STAR - A* = {x1 x2 x3 ... xk| k>=0 and each xi ∈ A}
+# OPERATIONS ON REGULAR LANGUAGES
+
+## 1. UNION
+
+$$
+A \cup B = \{x \mid x \in A \text{ or } x \in B\}
+$$
+
+## 2. CONCATENATION
+
+$$
+A \cdot B = \{xy \mid x \in A \text{ and } y \in B\}
+$$
+
+## 3. KLEENE STAR
+
+$$
+A^* = \{x_1x_2x_3\ldots x_k \mid k \geq 0 \text{ and each } x_i \in A\}
+$$
+
 ---
-Eg A= {pq,r}, B ={t,uv}
-1. A U B = {pq,r,t,uv}
-2. A.B = {pqt,pquv,rt,ruv}
-3. A* = {ɛ,pq,r,pqr,rpq,pqpq,rr,pqpqpq,pqrr,......}
+
+## Example
+
+Let:
+
+$$
+A = \{pq, r\}
+$$
+
+and
+
+$$
+B = \{t, uv\}
+$$
+
+### 1. UNION
+
+$$
+A \cup B = \{pq, r, t, uv\}
+$$
+
+### 2. CONCATENATION
+
+$$
+A \cdot B = \{pqt, pquv, rt, ruv\}
+$$
+
+### 3. KLEENE STAR
+
+$$
+A^* = \{\epsilon, pq, r, pqpq, pqr, rpq, rr, pqpqpq, pqrr, \ldots\}
+$$
+
+> $\epsilon$ is included because we can concatenate **zero strings** from $A$.
+
 ---
-## THEOREM 1 : The class of Regular Languages is closed under UNION
-### In simple terms - A U B is regular language if A,B are regular languages
-## THEOREM 2 : The class of Regular Languages is closed under CONCATENATION
-### In simple terms - A . B is regular language if A,B are regular languages
+
+# CLOSURE PROPERTIES
+
+## THEOREM 1: Closure under UNION
+
+The class of regular languages is closed under **union**.
+
+### In simple terms:
+
+If $A$ and $B$ are regular languages, then:
+
+$$
+A \cup B
+$$
+
+is also a regular language.
+
+---
+
+## THEOREM 2: Closure under CONCATENATION
+
+The class of regular languages is closed under **concatenation**.
+
+### In simple terms:
+
+If $A$ and $B$ are regular languages, then:
+
+$$
+A \cdot B
+$$
+
+is also a regular language.
