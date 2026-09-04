@@ -4,6 +4,7 @@ title: "Regular Languages Introduction"
 date: 2026-09-03
 categories: [Theory of Computation]
 ---
+
 # REGULAR LANGUAGES
 
 ## A language is **regular if and only if** it is recognized by a Finite State Machine (FSM).
@@ -16,44 +17,38 @@ Languages that **cannot be recognized by a Finite State Machine** are called **n
 
 An FSM has **finite memory**. It cannot remember an **unbounded amount of information**, such as:
 
-* An arbitrarily large count
-* An arbitrarily long string
-* Information that needs to be compared later without a fixed limit
+- An arbitrarily large count
+- An arbitrarily long string
+- Information that needs to be compared later without a fixed limit
 
 ### Example 1
 
 Consider:
 
-$$
-L = \{ww \mid w \in \{a,b\}^*\}
-$$
+**L = {ww | w ∈ {a,b}*}**
 
-For example, if $w = ab$, then:
+For example, if **w = ab**, then:
 
-$$
-ww = abab
-$$
+**ww = abab**
 
-This language is **not regular** because an FSM would need to remember an arbitrarily long string $w$ and compare it with the following string.
+This language is **not regular** because an FSM would need to remember an arbitrarily long string **w** and compare it with the following string.
+
+---
 
 ### Example 2
 
 Consider:
 
-$$
-L = \{a^n b^n \mid n \geq 0\}
-$$
+**L = {aⁿbⁿ | n ≥ 0}**
 
 Examples:
 
-```text
-ab
-aabb
-aaabbb
-aaaabbbb
-```
+    ab
+    aabb
+    aaabbb
+    aaaabbbb
 
-This language is **not regular** because an FSM cannot keep track of an arbitrarily large number of $a$'s and ensure that exactly the same number of $b$'s follows.
+This language is **not regular** because an FSM cannot keep track of an arbitrarily large number of **a's** and ensure that exactly the same number of **b's** follows.
 
 ---
 
@@ -61,21 +56,19 @@ This language is **not regular** because an FSM cannot keep track of an arbitrar
 
 ## 1. UNION
 
-$$
-A \cup B = \{x \mid x \in A \text{ or } x \in B\}
-$$
+**A ∪ B = {x | x ∈ A or x ∈ B}**
+
+---
 
 ## 2. CONCATENATION
 
-$$
-A \cdot B = \{xy \mid x \in A \text{ and } y \in B\}
-$$
+**A · B = {xy | x ∈ A and y ∈ B}**
+
+---
 
 ## 3. KLEENE STAR
 
-$$
-A^* = \{x_1x_2x_3\ldots x_k \mid k \geq 0 \text{ and each } x_i \in A\}
-$$
+**A* = {x₁x₂x₃...xₖ | k ≥ 0 and each xᵢ ∈ A}**
 
 ---
 
@@ -83,35 +76,23 @@ $$
 
 Let:
 
-$$
-A = \{pq, r\}
-$$
+**A = {pq, r}**
 
-and
-
-$$
-B = \{t, uv\}
-$$
+**B = {t, uv}**
 
 ### 1. UNION
 
-$$
-A \cup B = \{pq, r, t, uv\}
-$$
+**A ∪ B = {pq, r, t, uv}**
 
 ### 2. CONCATENATION
 
-$$
-A \cdot B = \{pqt, pquv, rt, ruv\}
-$$
+**A · B = {pqt, pquv, rt, ruv}**
 
 ### 3. KLEENE STAR
 
-$$
-A^* = \{\epsilon, pq, r, pqpq, pqr, rpq, rr, pqpqpq, pqrr, \ldots\}
-$$
+**A* = {ε, pq, r, pqpq, pqr, rpq, rr, pqpqpq, pqrr, ...}**
 
-> $\epsilon$ is included because we can concatenate **zero strings** from $A$.
+> **ε** is included because we can concatenate **zero strings** from A.
 
 ---
 
@@ -123,13 +104,7 @@ The class of regular languages is closed under **union**.
 
 ### In simple terms:
 
-If $A$ and $B$ are regular languages, then:
-
-$$
-A \cup B
-$$
-
-is also a regular language.
+If **A** and **B** are regular languages, then **A ∪ B** is also a regular language.
 
 ---
 
@@ -139,10 +114,4 @@ The class of regular languages is closed under **concatenation**.
 
 ### In simple terms:
 
-If $A$ and $B$ are regular languages, then:
-
-$$
-A \cdot B
-$$
-
-is also a regular language.
+If **A** and **B** are regular languages, then **A · B** is also a regular language.
