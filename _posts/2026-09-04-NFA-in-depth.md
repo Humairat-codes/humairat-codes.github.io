@@ -23,10 +23,14 @@ Look carefully,
 - A X 1 --> A
 - B X 0 --> Φ
 - B X 1 --> Φ
+
 ---
+
 From here, we can see that
 1. A -> A,B,AB,Φ
 2. This means from start state on any input, we can transition to 4 states.
 3. Given number of states |Q| = 2
 4. Thus, total transitions become 2^{Q}
+
 ---
+
