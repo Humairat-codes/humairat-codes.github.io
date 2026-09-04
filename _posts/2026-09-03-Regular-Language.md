@@ -4,15 +4,6 @@ title: "Regular Languages Introduction"
 date: 2026-09-03
 categories: [Theory of Computation]
 ---
-
----
-
-layout: post
-title: "Regular Languages Introduction"
-date: 2026-09-03
-categories: [Theory of Computation]
------------------------------------
-
 # REGULAR LANGUAGES
 
 ## A language is **regular if and only if** it is recognized by a Finite State Machine (FSM).
