@@ -44,4 +44,10 @@ eg : {0,00,001,0010,01}
 - F = {B}
 - We can see that A state has a next state Φ on input '1' and that is completely okay! because it is an NFA.
 
+---
+
+## set of all strings over 0,1 of length 2
+L = {00,01,10,11}
+
+![NFAEG2](/assets/NFAEG2.png)
 
