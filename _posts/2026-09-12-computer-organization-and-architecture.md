@@ -25,6 +25,9 @@ It is subdivided into 2 categories :
 ### Integer/Fixed-Point - used to represent whole numbers 
 * unsigned : represents non negative numbers (0 to 2^n -1)
 * signed : represents POSITIVE and NEGATIVE values using SIGNED MAGNITUDE, 1'S COMPLEMENT, 2'S COMPLEMENT
+
+---
+
 a) signed magnitude - it uses MSB for sign and n-1 bits for magnitude in binary : 
 * 0 - positive sign
 * 1 - negative sign 
@@ -33,12 +36,16 @@ eg : +5 represented by 0 101 (MSB IS 0 for positive)
 -5 represented by 1 101 (MSB IS 1 for negative)
 issue - contains +0 and -0 as 0 000 for +0 and 1 000 for -0 which is not necessary. wastes space.
 
+---
+
 b) 1's complement - positive numbers are represented normally in binary 
 BUT negative numbers are represented by performing 1's cpmplement(invert 1 to 0 and 0 to 1)
 eg : +5 is 0101
 -5 is 1010 (just invert the bits in +5) 
 not if you do 1's complement on -5, you'll get +5 as 0101.
 issue : again, two ways to represent 0 as, +0 is 0000 and -0 is 1111. WASTES BIT SPACE.
+
+---
 
 c) 2's complement : positive numbers are represented normally,
 BUT negative numbers are represented by 2's complement as take 1's  complement first and then add 1 to the result
@@ -47,7 +54,7 @@ Eg: +5 is 0101
 * take 1's complement of +5 which is 1010
 * Now, ADD 1 to 1's complement 1010 + 1 => 1011 is -5
 
-*** Characters Data formats** : encodes alphanumeric characters and symbols into binary byte patterns
+**Characters Data formats** : encodes alphanumeric characters and symbols into binary byte patterns
 > Can be done using 2 ways
 * ASCII  (7-8 bit) : American Standard code for Information Interchange
 * EBCDIC (8 bits) : Extended binary coded decimal Interchange code
