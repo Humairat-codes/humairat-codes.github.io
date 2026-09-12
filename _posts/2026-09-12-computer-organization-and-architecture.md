@@ -11,8 +11,8 @@ toc: true
 # Computer Organization and Architecture
 
 ## 1. Overview & Difference
-* **Computer Architecture:** Defines *what* the system does (instruction set architecture, addressing modes, data types visible to the programmer).
-* **Computer Organization:** Defines *how* the system implements it (hardware details, control signals, memory technology, interface implementations).
+**Computer Architecture:** Defines *what* the system does (instruction set architecture, addressing modes, data types visible to the programmer).
+**Computer Organization:** Defines *how* the system implements it (hardware details, control signals, memory technology, interface implementations).
 
 ## 2. DATA FORMATS
 In coa, we study 2 types of data 
@@ -31,13 +31,15 @@ a) signed magnitude - it uses MSB for sign and n-1 bits for magnitude in binary 
 
 eg : +5 represented by 0 101 (MSB IS 0 for positive)
 -5 represented by 1 101 (MSB IS 1 for negative)
-> issue - contains +0 and -0 as 0 000 for +0 and 1 000 for -0 which is not necessary. wastes space.
+issue - contains +0 and -0 as 0 000 for +0 and 1 000 for -0 which is not necessary. wastes space.
+
 b) 1's complement - positive numbers are represented normally in binary 
 BUT negative numbers are represented by performing 1's cpmplement(invert 1 to 0 and 0 to 1)
 eg : +5 is 0101
 -5 is 1010 (just invert the bits in +5) 
 not if you do 1's complement on -5, you'll get +5 as 0101.
-> issue : again, two ways to represent 0 as, +0 is 0000 and -0 is 1111. WASTES BIT SPACE.
+issue : again, two ways to represent 0 as, +0 is 0000 and -0 is 1111. WASTES BIT SPACE.
+
 c) 2's complement : positive numbers are represented normally,
 BUT negative numbers are represented by 2's complement as take 1's  complement first and then add 1 to the result
 Eg: +5 is 0101
@@ -54,8 +56,7 @@ Eg: +5 is 0101
 ---
 
 # Stored Program Architecture
-> It is also called Von Neumann Architecture
- in which : 1. PROGRAM INSRTUCTIONS and 2. DATA are stored in the same MAIN MEMORY.
+### It is also called Von Neumann Architecture in which : 1. PROGRAM INSRTUCTIONS and 2. DATA are stored in the same MAIN MEMORY.
 
 ### Key Components
 1. Central Processing Unit (CPU):
