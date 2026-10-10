@@ -40,7 +40,7 @@ title: "Humaira's Labs"
       <span class="lab-jp">ヒューマイラ研究所</span>
     </div>
 
-    <h1 class="lab-title">OMNIX<span>'S</span> LABS</h1>
+    <h1 class="lab-title">HUMAIRA<span>'S</span> LABS</h1>
 
     <p class="lab-subtitle">
       Explore the unknown. Document the process.
