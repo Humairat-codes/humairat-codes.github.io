@@ -1,0 +1,130 @@
+---
+---
+/* Put this file at: assets/css/style.scss  (keep the two --- lines at the top!) */
+
+/* If your theme is a standard GitHub Pages theme (minima, cayman, etc.),
+   this line keeps its layout and lets the rules below restyle it.
+   If your site has no theme, delete this line. */
+@import "{{ site.theme }}";
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500&display=swap");
+
+:root {
+  --ink:      #130f26;   /* page background, deep violet-navy */
+  --panel:    rgba(255, 255, 255, 0.045);
+  --line:     rgba(255, 255, 255, 0.12);
+  --text:     #e9e6f7;
+  --muted:    #9a94bd;
+  --rose:     #ff7eb6;   /* your pink, turned up to glow */
+  --ice:      #7fd7ff;   /* cool counter-accent */
+}
+
+html { background: var(--ink); }
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 12% -5%, rgba(255, 126, 182, 0.22), transparent 60%),
+    radial-gradient(800px 500px at 95% 10%, rgba(127, 215, 255, 0.16), transparent 60%),
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px) 0 0 / 44px 44px,
+    var(--ink);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Keep content in a readable column */
+.wrapper, .container, main, .page-content, #main_content, section {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The one memorable thing: a glowing title */
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: linear-gradient(90deg, var(--rose), var(--ice));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgba(255, 126, 182, 0.35));
+  border: 0;
+}
+
+/* Subject headings (Operating Systems, Theory of Computation...) */
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 2.4rem 0 0.7rem;
+  border: 0;
+}
+
+/* Each subject's list becomes a glass panel */
+h2 + ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem 1.2rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 1px rgba(255, 126, 182, 0.04), 0 18px 40px -22px rgba(0, 0, 0, 0.7);
+}
+
+h2 + ul li {
+  padding: 0.55rem 0 0.55rem 0.9rem;
+  border-left: 2px solid transparent;
+  color: var(--muted);
+  font-size: 0.92rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+h2 + ul li + li { border-top: 1px solid var(--line); }
+h2 + ul li:hover {
+  border-left-color: var(--rose);
+  background: linear-gradient(90deg, rgba(255, 126, 182, 0.09), transparent);
+}
+
+/* Links */
+a {
+  color: var(--ice);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+a:hover {
+  color: var(--rose);
+  text-shadow: 0 0 14px rgba(255, 126, 182, 0.55);
+}
+a:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Code and math stay readable */
+code, pre {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+}
+pre { padding: 1rem; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.8rem; }
+th { background: var(--panel); }
+blockquote { border-left: 3px solid var(--rose); color: var(--muted); padding-left: 1rem; margin-left: 0; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h2 + ul { padding: 0.4rem 0.8rem; }
+}
