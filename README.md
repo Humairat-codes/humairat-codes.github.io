@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,40:7b2ff7,100:00f0ff&height=240&section=header&text=HUMAIRA%27S%20LABS&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=%2F%2F%20CSE%20KNOWLEDGE%20BASE%20%E2%80%A2%20NOTES%20%E2%80%A2%20SYSTEMS%20%E2%80%A2%20THEORY&descAlignY=63&descSize=16" alt="banner"/>
+<div align="center">
 
 ```
 ██╗  ██╗██╗   ██╗███╗   ███╗ █████╗ ██╗██████╗  █████╗ 
@@ -16,6 +17,7 @@
         ███████╗██║  ██║██████╔╝███████║
         ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝
 ```
+</div>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=900&color=00F0FF&center=true&vCenter=true&width=700&height=50&lines=%3E+sudo+learn+--everything;%3E+loading+modules%3A+OS+%7C+TOC+%7C+MATH;%3E+compiling+notes...+100%25;%3E+status%3A+ONLINE+%E2%96%88;%3E+one+concept+at+a+time.+no+shortcuts.)](https://humairat-codes.github.io)
 
