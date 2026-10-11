@@ -55,7 +55,7 @@ Written to learn faster. Shared so you can too.
 | 07 | `COMPILER.forge`<br>**Compiler Design** | Lexical analysis, parsing, syntax-directed translation, runtime environments, intermediate code generation, local optimisation, data-flow analyses (constant propagation, liveness, common sub-expression elimination) | 🟡 LOADING |
 | 08 | `OS.kernel`<br>**Operating Systems** | System calls, processes, threads, IPC, concurrency & synchronization, deadlock, CPU & I/O scheduling, memory management & virtual memory, file systems | 🟢 ONLINE |
 | 09 | `DBMS.vault`<br>**Databases** | ER model, relational model (relational algebra, tuple calculus, SQL), integrity constraints, normal forms, file organization, indexing (B & B+ trees), transactions & concurrency control | 🟡 LOADING |
-| 10 | `NET.grid`<br>**Computer Networks** | Layering, switching (circuit, packet, virtual circuit) & performance metrics, data link layer (error detection, MAC, Ethernet), distance-vector & link-state routing, IPv4 (fragmentation, CIDR, NAT), TCP flow & congestion control, socket API, DNS & HTTP | 🟡 LOADING |
+| 10 | `NET.grid`<br>**Computer Networks** | Layering, switching (circuit, packet, virtual circuit) & performance metrics, data link layer (error detection, MAC, Ethernet), distance-vector & link-state routing, IPv4 (fragmentation, CIDR, NAT), TCP flow & congestion control, socket API, DNS & HTTP | 🟢 ONLINE |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
 
