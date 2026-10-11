@@ -1,17 +1,23 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,40:7b2ff7,100:00f0ff&height=200&section=header&text=%2F%2F%20ACCESS%20GRANTED&fontSize=44&fontColor=ffffff&animation=twinkling&fontAlignY=42&desc=HUMAIRA%27S%20LABS&descAlignY=68&descSize=20" alt="banner"/>
+<a href="https://humairat-codes.github.io" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/%F0%9F%8C%90_CLICK_HERE-TO_GO_TO_MY_BLOG_%E2%86%92-ff1744?style=for-the-badge&labelColor=0a0a0c" alt="Click here to go to my blog"/></a>
 
-<img src="assets/logo.png" alt="HUMAIRA LABS" width="760"/>
+**[humairat-codes.github.io](https://humairat-codes.github.io)**
+
+<sub>*(tip: Ctrl + click, or Cmd + click on Mac, to open it in a new tab)*</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0c,60:b00020,100:ff1744&height=110&section=header" alt=""/>
+
+<a href="https://humairat-codes.github.io" target="_blank" rel="noopener noreferrer"><img src="assets/logo.png" alt="HUMAIRA LABS - click to open the blog" width="760"/></a>
 
 <br>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=900&color=00F0FF&center=true&vCenter=true&width=720&height=50&lines=%3E+sudo+learn+--everything;%3E+loading%3A+MATH+%7C+OS+%7C+TOC+%7C+DBMS+%7C+CN;%3E+loading%3A+ML+%7C+DL+%7C+FULLSTACK+%7C+DEVOPS;%3E+compiling+notes...+100%25;%3E+one+concept+at+a+time.+no+shortcuts.)](https://humairat-codes.github.io)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2800&pause=900&color=FF1744&center=true&vCenter=true&width=720&height=50&lines=%3E+sudo+learn+--everything;%3E+loading%3A+MATH+%7C+OS+%7C+TOC+%7C+DBMS+%7C+CN;%3E+loading%3A+ML+%7C+DL+%7C+FULLSTACK+%7C+DEVOPS;%3E+compiling+notes...+100%25;%3E+one+concept+at+a+time.+no+shortcuts.)](https://humairat-codes.github.io)
 
-[![LIVE](https://img.shields.io/badge/%E2%96%B6_ENTER_THE_LAB-LIVE_BLOG-00f0ff?style=for-the-badge&logo=github&logoColor=black&labelColor=0f0c29)](https://humairat-codes.github.io)
-[![JEKYLL](https://img.shields.io/badge/ENGINE-JEKYLL-7b2ff7?style=for-the-badge&logo=jekyll&logoColor=white&labelColor=0f0c29)](https://jekyllrb.com/)
-[![STATUS](https://img.shields.io/badge/STATUS-ONLINE-39ff14?style=for-the-badge&labelColor=0f0c29)](https://humairat-codes.github.io)
-[![DOMAIN](https://img.shields.io/badge/DOMAIN-CSE-ff2079?style=for-the-badge&labelColor=0f0c29)](https://humairat-codes.github.io)
+[![LIVE](https://img.shields.io/badge/%E2%96%B6_ENTER_THE_LAB-LIVE_BLOG-ff1744?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0c)](https://humairat-codes.github.io)
+[![JEKYLL](https://img.shields.io/badge/ENGINE-JEKYLL-f0f0f0?style=for-the-badge&logo=jekyll&logoColor=black&labelColor=0a0a0c)](https://jekyllrb.com/)
+[![STATUS](https://img.shields.io/badge/STATUS-ONLINE-ff6a00?style=for-the-badge&labelColor=0a0a0c)](https://humairat-codes.github.io)
+[![DOMAIN](https://img.shields.io/badge/DOMAIN-CSE-ff1744?style=for-the-badge&labelColor=0a0a0c)](https://humairat-codes.github.io)
 
 <br>
 
@@ -19,7 +25,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `>_ SYSTEM_INFO`
 
@@ -38,7 +44,7 @@ Written to learn faster. Shared so you can too.
 
 > **Legend:** 🟢 `ONLINE` = notes live on the blog &nbsp;·&nbsp; 🟡 `LOADING` = coming soon
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[01]` CORE CS
 
@@ -55,9 +61,9 @@ Written to learn faster. Shared so you can too.
 | 07 | `COMPILER.forge`<br>**Compiler Design** | Lexical analysis, parsing, syntax-directed translation, runtime environments, intermediate code generation, local optimisation, data-flow analyses (constant propagation, liveness, common sub-expression elimination) | 🟡 LOADING |
 | 08 | `OS.kernel`<br>**Operating Systems** | System calls, processes, threads, IPC, concurrency & synchronization, deadlock, CPU & I/O scheduling, memory management & virtual memory, file systems | 🟢 ONLINE |
 | 09 | `DBMS.vault`<br>**Databases** | ER model, relational model (relational algebra, tuple calculus, SQL), integrity constraints, normal forms, file organization, indexing (B & B+ trees), transactions & concurrency control | 🟡 LOADING |
-| 10 | `NET.grid`<br>**Computer Networks** | Layering, switching (circuit, packet, virtual circuit) & performance metrics, data link layer (error detection, MAC, Ethernet), distance-vector & link-state routing, IPv4 (fragmentation, CIDR, NAT), TCP flow & congestion control, socket API, DNS & HTTP | 🟢 ONLINE |
+| 10 | `NET.grid`<br>**Computer Networks** | Layering, switching (circuit, packet, virtual circuit) & performance metrics, data link layer (error detection, MAC, Ethernet), distance-vector & link-state routing, IPv4 (fragmentation, CIDR, NAT), TCP flow & congestion control, socket API, DNS & HTTP | 🟡 LOADING |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[02]` APTITUDE
 
@@ -70,7 +76,7 @@ Written to learn faster. Shared so you can too.
 | `LOGIC.mind`<br>**Analytical Aptitude** | Deduction & induction, analogy, numerical relations & reasoning | 🟡 LOADING |
 | `SPATIAL.vis`<br>**Spatial Aptitude** | Transformation of shapes (translation, rotation, scaling, mirroring, assembling, grouping), paper folding, cutting, patterns in 2D & 3D | 🟡 LOADING |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[03]` CODE ARENA
 
@@ -86,15 +92,15 @@ Written to learn faster. Shared so you can too.
 
 <div align="center">
 
-[![C](https://img.shields.io/badge/C-0f0c29?style=for-the-badge&logo=c&logoColor=00f0ff)](https://humairat-codes.github.io)
-[![C++](https://img.shields.io/badge/C++-0f0c29?style=for-the-badge&logo=cplusplus&logoColor=7b2ff7)](https://humairat-codes.github.io)
-[![Java](https://img.shields.io/badge/Java-0f0c29?style=for-the-badge&logo=openjdk&logoColor=ff2079)](https://humairat-codes.github.io)
-[![LeetCode](https://img.shields.io/badge/LeetCode-0f0c29?style=for-the-badge&logo=leetcode&logoColor=ffa116)](https://leetcode.com)
-[![Codeforces](https://img.shields.io/badge/Codeforces-0f0c29?style=for-the-badge&logo=codeforces&logoColor=00f0ff)](https://codeforces.com)
+[![C](https://img.shields.io/badge/C-0a0a0c?style=for-the-badge&logo=c&logoColor=ff1744)](https://humairat-codes.github.io)
+[![C++](https://img.shields.io/badge/C++-0a0a0c?style=for-the-badge&logo=cplusplus&logoColor=f0f0f0)](https://humairat-codes.github.io)
+[![Java](https://img.shields.io/badge/Java-0a0a0c?style=for-the-badge&logo=openjdk&logoColor=ff6a00)](https://humairat-codes.github.io)
+[![LeetCode](https://img.shields.io/badge/LeetCode-0a0a0c?style=for-the-badge&logo=leetcode&logoColor=ffa116)](https://leetcode.com)
+[![Codeforces](https://img.shields.io/badge/Codeforces-0a0a0c?style=for-the-badge&logo=codeforces&logoColor=ff1744)](https://codeforces.com)
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[04]` AI LAB
 
@@ -103,7 +109,7 @@ Written to learn faster. Shared so you can too.
 | `ML.core`<br>**Machine Learning** | Regression, classification, clustering, model evaluation, feature engineering | 🟡 LOADING |
 | `DL.neural`<br>**Deep Learning** | Neural networks, backpropagation, CNNs, RNNs, transformers | 🟡 LOADING |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[05]` DEV STACK
 
@@ -114,7 +120,7 @@ Written to learn faster. Shared so you can too.
 | `DATA` | SQL, MongoDB, schema design | 🟡 LOADING |
 | `DEVOPS` | Linux, Git, Docker, CI/CD, Kubernetes, cloud, monitoring | 🟡 LOADING |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 ## `[06]` TRANSMISSIONS
 
@@ -139,7 +145,7 @@ Written to learn faster. Shared so you can too.
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 <!-- AUTHOR SECTION HIDDEN: when you have your pfp link + assets/ascii-me.png, delete this line and the closing arrow line below
 ## `[07]` AUTHOR
@@ -162,17 +168,17 @@ Written to learn faster. Shared so you can too.
 </div>
 -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:7b2ff7,100:ff2079&height=3&section=header" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff1744,50:f0f0f0,100:ff1744&height=3&section=header" width="100%" alt=""/>
 
 <div align="center">
 
 ### `BUILT WITH`
 
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0f0c29?style=for-the-badge&logo=github&logoColor=00f0ff)
-![Jekyll](https://img.shields.io/badge/Jekyll-0f0c29?style=for-the-badge&logo=jekyll&logoColor=ff2079)
-![Markdown](https://img.shields.io/badge/Markdown-0f0c29?style=for-the-badge&logo=markdown&logoColor=7b2ff7)
-![LaTeX](https://img.shields.io/badge/LaTeX-0f0c29?style=for-the-badge&logo=latex&logoColor=39ff14)
-![Git](https://img.shields.io/badge/Git-0f0c29?style=for-the-badge&logo=git&logoColor=00f0ff)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0a0a0c?style=for-the-badge&logo=github&logoColor=ff1744)
+![Jekyll](https://img.shields.io/badge/Jekyll-0a0a0c?style=for-the-badge&logo=jekyll&logoColor=f0f0f0)
+![Markdown](https://img.shields.io/badge/Markdown-0a0a0c?style=for-the-badge&logo=markdown&logoColor=ff6a00)
+![LaTeX](https://img.shields.io/badge/LaTeX-0a0a0c?style=for-the-badge&logo=latex&logoColor=ff1744)
+![Git](https://img.shields.io/badge/Git-0a0a0c?style=for-the-badge&logo=git&logoColor=f0f0f0)
 
 <br>
 
@@ -181,6 +187,6 @@ Written to learn faster. Shared so you can too.
 > session closed. see you in the next post.
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f0ff,50:7b2ff7,100:0f0c29&height=130&section=footer" alt="footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff1744,60:b00020,100:0a0a0c&height=130&section=footer" alt="footer"/>
 
 </div>
