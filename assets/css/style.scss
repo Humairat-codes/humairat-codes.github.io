@@ -128,3 +128,59 @@ blockquote { border-left: 3px solid var(--rose); color: var(--muted); padding-le
   body { font-size: 16px; }
   h2 + ul { padding: 0.4rem 0.8rem; }
 }
+/* ---- Fix Primer's white boxes (must stay at the end of the file) ---- */
+
+/* code blocks and inline code */
+.markdown-body pre,
+.markdown-body .highlight,
+.markdown-body .highlight pre,
+.markdown-body div.highlighter-rouge {
+  background: rgba(0, 0, 0, 0.45) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.markdown-body pre code {
+  background: transparent !important;
+  color: inherit !important;
+  border: 0;
+}
+.markdown-body code {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: var(--ice) !important;
+}
+
+/* note boxes */
+.markdown-body blockquote {
+  background: var(--panel) !important;
+  color: var(--text) !important;
+  border-left: 3px solid var(--rose) !important;
+  padding: 0.6rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+.markdown-body blockquote p,
+.markdown-body blockquote strong,
+.markdown-body blockquote em {
+  color: var(--text) !important;
+}
+
+/* tables */
+.markdown-body table,
+.markdown-body table tr,
+.markdown-body table tr:nth-child(2n) {
+  background: transparent !important;
+  color: var(--text) !important;
+}
+.markdown-body table th {
+  background: rgba(255, 126, 182, 0.12) !important;
+  color: var(--ice) !important;
+}
+.markdown-body table td {
+  background: var(--panel) !important;
+  color: var(--text) !important;
+}
+.markdown-body table th,
+.markdown-body table td,
+.markdown-body table tr {
+  border: 1px solid var(--line) !important;
+}
