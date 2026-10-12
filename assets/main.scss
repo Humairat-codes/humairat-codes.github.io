@@ -1,0 +1,29 @@
+---
+---
+@import "minima";
+
+/* dark boxes with light text */
+pre, .highlight, .highlight pre, div.highlighter-rouge {
+  background: #0d1117 !important;
+  color: #e6edf3 !important;
+  border: 1px solid rgba(123, 97, 255, .5);
+  border-radius: 6px;
+}
+pre code { background: transparent !important; color: inherit !important; }
+code {
+  background: #1a1530;
+  color: #2fd8ff;
+  border: 0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+blockquote {
+  background: #0d1117;
+  color: #e6edf3;
+  border-left: 4px solid #ff3d9a;
+  padding: 10px 16px;
+}
+blockquote p { color: #e6edf3; }
+th { background: #1a1530; color: #2fd8ff; }
+td { background: #0d1117; color: #e6edf3; }
+th, td { border: 1px solid #30363d; padding: 8px 12px; }
