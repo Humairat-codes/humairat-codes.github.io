@@ -22,17 +22,21 @@
   padding: 2px 6px;
   border-radius: 4px;
 }
+
+/* note boxes */
 .markdown-body blockquote {
   background: #0d1117 !important;
   color: #e6edf3 !important;
   border-left: 4px solid #ff3d9a !important;
   padding: 10px 16px;
 }
-.markdown-body blockquote p { color: #e6edf3 !important; }
-.markdown-body table th { background: #1a1530 !important; color: #2fd8ff !important; }
-.markdown-body table td { background: #0d1117 !important; color: #e6edf3 !important; }
-.markdown-body table th,
-.markdown-body table td { border: 1px solid #30363d !important; padding: 8px 12px; }
+.markdown-body blockquote p,
+.markdown-body blockquote strong,
+.markdown-body blockquote em {
+  color: #e6edf3 !important;
+}
+
+/* tables */
 .markdown-body table,
 .markdown-body table tr,
 .markdown-body table tr:nth-child(2n) {
@@ -50,15 +54,6 @@
 .markdown-body table th,
 .markdown-body table td,
 .markdown-body table tr {
-  border-color: #30363d !important;
-}
-.markdown-body blockquote {
-  background: #0d1117 !important;
-  color: #e6edf3 !important;
-  border-left: 4px solid #ff3d9a !important;
-}
-.markdown-body blockquote p,
-.markdown-body blockquote strong,
-.markdown-body blockquote em {
-  color: #e6edf3 !important;
+  border: 1px solid #30363d !important;
+  padding: 8px 12px;
 }
