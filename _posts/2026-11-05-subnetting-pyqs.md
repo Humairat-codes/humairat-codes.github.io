@@ -219,3 +219,199 @@ Don't even look at the first 2 octets (that's the NID). `95` = `0101 1111` has *
 > **IMPORTANT:** The DBA tells you the **MAXIMUM** HID, not the exact value. Any mask with **HID ≤ 13** is valid.
 
 **Answer: d) all of the above**
+
+---
+
+## Forwarding table questions
+
+> **NAT** = *Numerical Answer Type* (GATE): you type a number instead of picking an option.
+
+### Rules for forwarding/routing tables
+
+1. Take the destination IP and go through the table, starting with the **longest mask** (the one with the most 1's).
+2. **AND** the destination IP with that entry's mask. If the result **equals that entry's network/subnet number**, it's a match, so use that entry's interface or next hop.
+3. If it doesn't match, move on to the next longest mask.
+4. If nothing matches, use the **default** entry.
+
+> **IMPORTANT:** An address can match **several** entries. The one with the **longest mask wins** (this is called *longest prefix match*).
+
+---
+
+## Q12 (NAT): Which interface?
+
+The forwarding table of a router is:
+
+| Subnet number | Subnet mask | Interface ID |
+|---------------|-------------|--------------|
+| `200.150.0.0` | `255.255.0.0` | 1 |
+| `200.150.64.0` | `255.255.224.0` | 2 |
+| `200.150.68.0` | `255.255.255.0` | 3 |
+| `200.150.68.64` | `255.255.255.224` | 4 |
+| default | n/a | 0 |
+
+A packet addressed to `200.150.68.118` arrives at the router. It will be forwarded to the interface with ID ______.
+
+**Step 1: longest mask, `255.255.255.224`.** Only the last octet matters:
+
+```
+  118 = 0111 0110
+  224 = 1110 0000   AND
+  ------------------
+        0110 0000 = 96   →  200.150.68.96
+```
+
+`200.150.68.96` does **not** match the subnet number `200.150.68.64`, so no match.
+
+**Step 2: next mask, `255.255.255.0`.** The mask is `255` in the first three octets and `0` in the last, so the first three octets stay the same and the last becomes 0 (no need to AND again): `200.150.68.0`.
+
+That **matches** the subnet number `200.150.68.0`, so the packet goes to interface **3**.
+
+**Answer: 3**
+
+---
+
+## Q13 (MCQ): Routing table with two destinations
+
+| Destination | Subnet mask | Interface |
+|-------------|-------------|-----------|
+| `128.75.43.0` | `255.255.255.0` | eth0 |
+| `128.75.43.0` | `255.255.255.128` | eth1 |
+| `192.12.17.5` | `255.255.255.255` | eth3 |
+| default | n/a | eth2 |
+
+On which interface will packets for `128.75.43.16` and `192.12.17.10` be forwarded?
+
+a) eth1 and eth2  b) eth0 and eth2  c) eth0 and eth3  d) eth1 and eth3
+
+**For `128.75.43.16`:**
+
+- Mask `255.255.255.255` gives `128.75.43.16`, which is not `192.12.17.5`, so no match.
+- Mask `255.255.255.128`: the last octet is `16` = `0001 0000`, and `0001 0000` AND `1000 0000` = `0`, so the result is `128.75.43.0`. **It matches, so eth1.**
+
+> **IMPORTANT:** `128.75.43.16` also matches the `/24` entry (eth0), but the `255.255.255.128` mask is **longer**, so eth1 wins.
+
+**For `192.12.17.10`:**
+
+- Mask `255.255.255.255` gives `192.12.17.10`, not `192.12.17.5`, so no match.
+- Mask `255.255.255.128` gives `192.12.17.0`, not `128.75.43.0`, so no match.
+- Mask `255.255.255.0` gives `192.12.17.0`, no match.
+- Nothing matches, so the **default** is used: **eth2**.
+
+**Answer: a) eth1 and eth2**
+
+---
+
+## Q14 (MCQ): Network table with next hops
+
+| Network no. | Net mask | Next hop |
+|-------------|----------|----------|
+| `128.96.170.0` | `255.255.254.0` | interface 0 |
+| `128.96.168.0` | `255.255.254.0` | interface 1 |
+| `128.96.166.0` | `255.255.254.0` | R2 |
+| `128.96.164.0` | `255.255.252.0` | R3 |
+| `0.0.0.0` | default | R4 |
+
+Find the next hop for `128.96.171.92`, `128.96.167.151`, `128.96.163.121` and `128.96.165.121`.
+
+Only the **3rd octet** changes, so compare only that:
+
+- `254` = `1111 1110` (the `/23` entries)
+- `252` = `1111 1100` (the `/22` entry)
+
+| Destination | 3rd octet | AND with 254 (`/23`) | AND with 252 (`/22`) | Match | Next hop |
+|-------------|-----------|----------------------|----------------------|-------|----------|
+| `128.96.171.92` | `1010 1011` (171) | `1010 1010` = 170 → `128.96.170.0` | not needed | `/23` entry | **interface 0** |
+| `128.96.167.151` | `1010 0111` (167) | `1010 0110` = 166 → `128.96.166.0` | not needed | `/23` entry | **R2** |
+| `128.96.163.121` | `1010 0011` (163) | `1010 0010` = 162, no match | `1010 0000` = 160, no match | none | **R4 (default)** |
+| `128.96.165.121` | `1010 0101` (165) | `1010 0100` = 164, no match | `1010 0100` = 164 → `128.96.164.0` | `/22` entry | **R3** |
+
+> **IMPORTANT:** For `128.96.165.121`, the `/23` AND result is `164`, but **no `/23` entry** has the network number 164 (they are 170, 168 and 166). You only compare with entries that use **the same mask**. It then matches the `/22` entry instead.
+
+**Answers:** `128.96.171.92` goes to interface 0, `128.96.167.151` to R2, `128.96.163.121` to R4, and `128.96.165.121` to R3.
+
+---
+
+## Q15 (NAT): Packets forwarded via R2
+
+| Prefix | Next hop router |
+|--------|-----------------|
+| `10.1.1.0/24` | R1 |
+| `10.1.1.128/25` | R2 |
+| `10.1.1.64/26` | R3 |
+| `10.1.1.192/26` | R4 |
+
+The router forwards **20 packets each** to 5 hosts: `10.1.1.16`, `10.1.1.72`, `10.1.1.132`, `10.1.1.191`, `10.1.1.205`. How many packets are forwarded via R2?
+
+The masks are `/24` = `255.255.255.0`, `/25` = `255.255.255.128`, and `/26` = `255.255.255.192`. Check `/26` first, then `/25`, then `/24`.
+
+| Host | Last octet | `/26` result | `/25` result | `/24` result | Next hop |
+|------|-----------|--------------|--------------|--------------|----------|
+| `10.1.1.16` | `0001 0000` | `10.1.1.0`, no | `10.1.1.0`, no | `10.1.1.0`, **yes** | R1 |
+| `10.1.1.72` | `0100 1000` | `10.1.1.64`, **yes** | not needed | not needed | R3 |
+| `10.1.1.132` | `1000 0100` | `10.1.1.128`, no | `10.1.1.128`, **yes** | not needed | **R2** |
+| `10.1.1.191` | `1011 1111` | `10.1.1.128`, no | `10.1.1.128`, **yes** | not needed | **R2** |
+| `10.1.1.205` | `1100 1101` | `10.1.1.192`, **yes** | not needed | not needed | R4 |
+
+> **IMPORTANT:** `10.1.1.191` is a trap. It's in the block 128 to 191, but there is **no `/26` entry** for `10.1.1.128`, so it falls through to the `/25` entry (R2).
+
+R2 receives the packets for 2 hosts (`.132` and `.191`): 20 + 20 = **40 packets**.
+
+**Answer: 40**
+
+---
+
+## Q16 (MCQ): VLSM with 100, 50 and 50 hosts
+
+A company has the Class C network `204.204.204.0`. It wants subnets with **100 hosts in one** and **50 hosts in each of two others**. Which is a feasible set of subnet address/subnet mask pairs?
+
+**Why equal-sized subnets don't work:**
+
+- Class C has 8 host bits. 3 subnets needs **2 SID bits** (2² = 4 ≥ 3), which leaves **6 host bits**.
+- 2⁶ − 2 = 62 hosts, but we need **100**, so this is **NOT possible**!
+- 100 hosts needs **7 host bits** (2⁷ − 2 = 126 ≥ 100), which leaves only **1 SID bit** (2 subnets).
+
+So we need **VLSM** (Variable Length Subnet Masks): subnets of different sizes.
+
+**Method:**
+
+1. Borrow **1 bit** to get 2 subnets: `204.204.204.0` and `204.204.204.128`, with mask `255.255.255.128`. Each has 2⁷ − 2 = 126 hosts, which is ≥ 100.
+2. Take **one** of them for the 100-host subnet.
+3. Divide the **other** one by borrowing 1 more bit, giving two subnets with mask `255.255.255.192`. Each has 2⁶ − 2 = 62 hosts, which is ≥ 50.
+
+**Two feasible allocations:**
+
+| | Subnet | Hosts needed | Subnet address | Mask |
+|---|--------|--------------|----------------|------|
+| **Option A** | X | 100 | `204.204.204.0` | `255.255.255.128` |
+| | Y | 50 | `204.204.204.128` | `255.255.255.192` |
+| | Z | 50 | `204.204.204.192` | `255.255.255.192` |
+| **Option B** | X | 100 | `204.204.204.128` | `255.255.255.128` |
+| | Y | 50 | `204.204.204.0` | `255.255.255.192` |
+| | Z | 50 | `204.204.204.64` | `255.255.255.192` |
+
+> **Remember:** the 100-host subnet takes up a **whole half** (0 to 127 or 128 to 255). The two 50-host subnets must fit in the **other half**, so they can't overlap with it.
+
+---
+
+## Q17 (MCQ): Different masks on two computers
+
+**C1** = `203.197.2.53` with netmask `255.255.128.0` (`/17`)
+**C2** = `203.197.75.201` with netmask `255.255.192.0` (`/18`)
+
+What is true?
+
+**Shortcut: block size** = 256 − (mask value in the interesting octet).
+
+| Computer | Mask | Block size (3rd octet) | Its own network |
+|----------|------|------------------------|-----------------|
+| C1 | `255.255.128.0` | 256 − 128 = **128** | `203.197.0.0` to `203.197.127.255` |
+| C2 | `255.255.192.0` | 256 − 192 = **64** | `203.197.64.0` to `203.197.127.255` |
+
+For C2: `75` = `0100 1011` AND `1100 0000` = `0100 0000` = 64, so the subnet is `203.197.64.0`.
+
+**What each computer thinks:**
+
+- **C1's view of C2:** `75` is inside `0` to `127`, so C1 thinks C2 is on the **same** network.
+- **C2's view of C1:** `2` = `0000 0010` AND `1100 0000` = `0`, so the subnet would be `203.197.0.0`, which is not C2's `203.197.64.0`. C2 thinks C1 is on a **different** network.
+
+**Answer: C1 assumes C2 is on the same network, but C2 assumes C1 is on a different network.**
